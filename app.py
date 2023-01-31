@@ -3,6 +3,7 @@ import pandas as pd
 st.write('hello world')
 All_Shipments_1_df = pd.read_csv('All_Shipments_1_simple.csv')
 df = All_Shipments_1_df.copy() 
+st.write(df)
 
 j_df = pd.read_csv("InView___Updated_List_of_5_Mil_Generics_for_Fcst_Testing__1_18_23_.csv")[['Generic','Plnt','4 Month Trend']]
 j_df['Plant-Generic'] = j_df['Plnt'].astype(str)+'-'+j_df['Generic'].astype(str)
